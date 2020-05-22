@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    bottom: 0;
+    line-height: 0;
+}
+
+.div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.div button {
+    height: 50px;
+    font-weight: bold;
+}
+
+.div button:hover {
+    cursor: pointer;
+}
