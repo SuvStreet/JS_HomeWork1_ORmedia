@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS_HomeWork1_ORmedia</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="div" id="div" style="background-color: green;">
-        <button onclick="document.location='https://github.com/SuvStreet?tab=repositories'">Переход на мой GitHub</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS_HomeWork1_ORmedia</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div
+            class="div_style"
+            id="div_style"
+            style="background-color: green;"
+        ></div>
 
-        <button  onclick="editColorBlock()">Меняю стиль страницы</button>
+        <div class="div1" id="div1">
+            <button
+                onclick="document.location='https://github.com/SuvStreet?tab=repositories'"
+            >
+                Переход на мой GitHub
+            </button>
 
-        <button>Меняю содержимое страницы</button>
-    </div>
+            <button onclick="editColorBlock()">Меняю стиль страницы</button>
 
-    <script src="./script.js"></script>
-</body>
+            <button onclick="addBlock()">Меняю содержимое страницы</button>
+        </div>
+
+        <div class="div2" id="div2">
+            <div class="js">
+                <div class="j">
+                    <h1>j</h1>
+                </div>
+                <div class="s">
+                    <h1>s</h1>
+                </div>
+            </div>
+            <div class="javaScript">
+                <h1>JavaScript</h1>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
 </html>
