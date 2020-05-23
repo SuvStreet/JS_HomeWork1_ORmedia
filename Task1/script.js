@@ -1,12 +1,19 @@
 var block = document.getElementById('div_style');
 
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+}
+
 function editColorBlock(){
-    if(block.style.backgroundColor === 'green'){
-        block.style.backgroundColor = 'blue';
-    }
-    else {
-        block.style.backgroundColor = 'green';
-    }
+    var R = getRandomIntInclusive(0, 255);
+    /* alert("Значение R " + R); */
+    var G = getRandomIntInclusive(0, 255);
+    /* alert("Значение G " + G); */
+    var B = getRandomIntInclusive(0, 255);
+    /* alert("Значение B " + B); */
+    block.style.backgroundColor = 'rgb(' + R + ', ' + G + ', ' + B + ')';
 };
 
 var show = document.getElementById('div_style');
